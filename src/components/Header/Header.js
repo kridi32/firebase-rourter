@@ -1,12 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; 
+import '../styles/styles.css'
 
 const Header = () => {
     return (
-        <div>
-            <Link to='/'>Home</Link>
-            <Link to='/login'>Login</Link>
-        </div>
+        <header>
+            <nav>
+                <Link to='/'>Home</Link>
+                <Link to='/login'>Login</Link>
+                <Link to='/register'>Register</Link>
+            </nav>
+        </header>
     );
 };
 
