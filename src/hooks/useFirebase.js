@@ -7,6 +7,7 @@ const useFirebase = () => {
     const provider = new GoogleAuthProvider();
 
     useEffect( () => {
+        // observer of user state change(this will allow to re-render all the components using user state to the latest user state)
         onAuthStateChanged(auth, user =>{
             setUser(user);
         }) 
